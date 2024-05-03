@@ -1,7 +1,8 @@
-file name: .gitignore<br>
-description :<br>
-/__pycache__<br>
-/include<br>
-/Lib<br>
-/Scripts<br>
+file name: .gitignore
+
+description :
+/__pycache__
+/include
+/Lib
+/Scripts
 pyvenv.cfg
