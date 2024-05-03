@@ -1,14 +1,9 @@
 [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/About)
 
-
-<!---- 👋 Hi, I’m @pozuhtuhv
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-pozuhtuhv/pozuhtuhv is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- add : 내용 추가
+- update : 버전 업데이트
+- del : 삭제
+- rename : 이름 변경
+- modify : 수정
+- correct : 문법 오류, 오타, 타입 변경 
+- docs : 문서 수정
