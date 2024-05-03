@@ -1,8 +1,10 @@
-Git rule<br>
-\- add : 내용 추가<br>
-\- update : 버전 업데이트<br>
-\- del : 삭제<br>
-\- rename : 이름 변경<br>
-\- modify : 수정<br>
-\- correct : 문법 오류, 오타, 타입 변경<br>
-\- docs : 문서 수정
+```
+Git rule
+- add : 내용 추가
+- update : 버전 업데이트
+- del : 삭제
+- rename : 이름 변경
+- modify : 수정
+- correct : 문법 오류, 오타, 타입 변경
+- docs : 문서 수정
+```
