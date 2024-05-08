@@ -1,4 +1,4 @@
-포트폴리오 : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/About)<br>
+포트폴리오 : [https://pozuhtuhv.github.io/About](https://pozuhtuhv.github.io/About)<br>
 
 ##### Rule
 
