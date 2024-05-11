@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" alt="Tableau">
 <br>
 <br>
-info : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/about)<br>
+info : https://pozuhtuhv.github.io/about<br>
     
 ##### Rule
 
