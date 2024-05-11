@@ -1,4 +1,4 @@
-more info : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/about)<br>
+
 
 <div align="center">
     <h2>Tech Stack</h2>
@@ -9,7 +9,9 @@ more info : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/abou
 <img src="https://img.shields.io/badge/Looker-4285F4?style=flat-square&logo=Looker&logoColor=white">
 <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" alt="Tableau">
 <br>
-
+<br>
+info : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/about)<br>
+    
 ##### Rule
 
 \- 메인 주제에 모듈 적고 서브 리포지 최대한 합치기<br>
