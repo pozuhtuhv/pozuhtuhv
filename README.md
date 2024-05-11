@@ -1,4 +1,4 @@
-포트폴리오 : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/about)<br>
+more info : [https://pozuhtuhv.github.io/about](https://pozuhtuhv.github.io/about)<br>
 
 <div align="center">
     <h2>Tech Stack</h2>
