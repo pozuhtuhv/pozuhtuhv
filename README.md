@@ -13,22 +13,14 @@ info : https://pozuhtuhv.github.io/about<br>
 
 ## Rule
 </div>
-<div style="padding-left: 500px;">
-  <ul>
-    <li>메인 프로젝트에 모듈을 통합하고 서브 리포지토리를 최대한 줄이기</li>
-    <li>각 리포지토리(서브 리포지토리)마다 README.md 작성하여 명확하게 구분하기
-      <ul>
-        <li><strong>upload</strong>: 리포지토리 업로드</li>
-        <li><strong>edit</strong>: 코드 수정</li>
-        <li><strong>del</strong>: 기능 삭제</li>
-        <li><strong>combine</strong>: 코드 합치기</li>
-        <li><strong>optimize</strong>: 코드 최적화</li>
-      </ul>
-    </li>
-  </ul>
-</div>
 
-
+- **메인 프로젝트에 모듈을 통합하고 서브 리포지토리를 최대한 줄이기**
+- **각 리포지토리(서브 리포지토리)마다 README.md 작성하여 명확하게 구분하기**
+  - **upload**: 리포지토리 업로드
+  - **edit**: 코드 수정
+  - **del**: 기능 삭제
+  - **combine**: 코드 합치기
+  - **optimize**: 코드 최적화
 
 <!--
 **pozuhtuhv/pozuhtuhv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
