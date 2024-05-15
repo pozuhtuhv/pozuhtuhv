@@ -1,27 +1,24 @@
+# Tech Stack
 
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Looker](https://img.shields.io/badge/-Looker-4285F4?style=flat-square&logo=looker&logoColor=white)
+![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
 
-<div align="center">
-    <h2>Tech Stack</h2>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> 
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white">
-<img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white">
-<img src="https://img.shields.io/badge/Looker-4285F4?style=flat-square&logo=Looker&logoColor=white">
-<img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" alt="Tableau">
-<br>
-<br>
-info : https://pozuhtuhv.github.io/about<br>
-    
-##### Rule
+[info](https://pozuhtuhv.github.io/about)
 
-\- 메인 주제에 모듈 적고 서브 리포지 최대한 합치기<br>
-\- 리포지(서브리포지) 마다 README.md 작성하여 구분하기<br>
-\- upload 리포 업로드<br>
-\- edit - 코드 수정<br>
-\- del - 기능 삭제<br>
-\- combine - 코드 합치기<br>
-\- optimize - 코드 최적화<br>
-</div>
+## Rule
+
+- **메인 주제에 모듈 적고 서브 리포지 최대한 합치기**
+- **리포지(서브리포지) 마다 README.md 작성하여 구분하기**
+  - **upload**: 리포 업로드
+  - **edit**: 코드 수정
+  - **del**: 기능 삭제
+  - **combine**: 코드 합치기
+  - **optimize**: 코드 최적화
+
 
 <!--
 **pozuhtuhv/pozuhtuhv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
