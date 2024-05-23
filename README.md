@@ -20,7 +20,7 @@ info : https://pozuhtuhv.github.io/about<br>
   - **upload**: 업로드
   - **edit**: 수정
   - **del**: 삭제
-  - **combine**: 코드 합치기
+  - **combine**: 기능 합치기
   - **optimize**: 코드 최적화
 
 <!--
