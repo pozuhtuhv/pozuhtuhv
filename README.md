@@ -18,6 +18,7 @@ info : https://pozuhtuhv.github.io/about<br>
 
 - **메인 프로젝트에 모듈을 통합하고 서브 리포지토리를 최대한 줄이기**
 - **각 리포지토리(서브 리포지토리)마다 README.md 작성하여 명확하게 구분하기**
+  - **add**: 코드 추가 
   - **upload**: 업로드
   - **edit**: 수정
   - **del**: 삭제
