@@ -23,7 +23,7 @@ info : https://pozuhtuhv.github.io/about<br>
 <table>
 <tr>
 <th align="center">
-<img width="441" height="0">
+<img width="50%" height="0">
 <p> 
 <small>
 Repositories Name Rule
@@ -31,7 +31,7 @@ Repositories Name Rule
 </p>
 </th>
 <th align="center">
-<img width="441" height="0">
+<img width="50%" height="0">
 <p> 
 <small>
 Commit Comment Rule
