@@ -19,10 +19,42 @@
 info : https://pozuhtuhv.github.io/about<br>
 </div>
 
+<div style="display: flex; justify-content: space-between;">
+<div style="flex: 1; padding-right: 10px;">
+<b>Repositories Name Rule</b><br>
+- framework_~ : Django, FastAPI, Streamlit<br>
+- crawl_~ : Selenium, Requests<br>
+</div>
+<div style="flex: 1; padding-left: 10px;">
+<b>Commit Comment Rules</b><br>
+- add: 추가<br>
+- upload: 업로드<br>
+- edit: 수정<br>
+- del: 삭제<br>
+- combine: 기능 합치기<br>
+- optimize: 코드 최적화<br>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Rule
 
-- **메인 프로젝트에 모듈을 통합하고 서브 리포지토리를 최대한 줄이기**
-- **각 리포지토리(서브 리포지토리)마다 README.md 작성하여 명확하게 구분하기**
+- **Repositories Name Rule**
+  - **framework**_~ : Django, FastAPI, Streamlit
+  - **crawl**_~ : Selenium, Requests
+
+- **Commit Comment Rule**
   - **add**: 추가 
   - **upload**: 업로드
   - **edit**: 수정
