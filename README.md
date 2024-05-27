@@ -19,37 +19,7 @@
 info : https://pozuhtuhv.github.io/about<br>
 </div>
 
-<div style="display: flex; justify-content: space-between;">
-<div style="flex: 1; padding-right: 10px;">
-<b>Repositories Name Rule</b><br>
-- framework_~ : Django, FastAPI, Streamlit<br>
-- crawl_~ : Selenium, Requests<br>
-</div>
-<div style="flex: 1; padding-left: 10px;">
-<b>Commit Comment Rules</b><br>
-- add: 추가<br>
-- upload: 업로드<br>
-- edit: 수정<br>
-- del: 삭제<br>
-- combine: 기능 합치기<br>
-- optimize: 코드 최적화<br>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Rule
-
 - **Repositories Name Rule**
   - **framework**_~ : Django, FastAPI, Streamlit
   - **crawl**_~ : Selenium, Requests
