@@ -23,6 +23,7 @@ info : https://pozuhtuhv.github.io/about<br>
 - **Repositories Name Rule**
   - **framework**_~ : Django, FastAPI, Streamlit
   - **crawl**_~ : Selenium, Requests
+  - **gui**_~ : tkinter, PySide6
 
 - **Commit Comment Rule**
   - **add**: 추가 
