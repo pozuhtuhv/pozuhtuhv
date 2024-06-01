@@ -24,7 +24,8 @@ info : https://pozuhtuhv.github.io/about<br>
   - **framework**_~ : Django, FastAPI, Streamlit
   - **crawl**_~ : Selenium, Requests
   - **gui**_~ : tkinter, PySide6
-  - **bot**_~ : just automation
+  - **bot**_~ : automation bot
+  - **fork**_ : fork repositories
     
 - **Commit Comment Rule**
   - **add**: 추가 
