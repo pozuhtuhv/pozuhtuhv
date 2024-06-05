@@ -21,7 +21,7 @@ info : https://pozuhtuhv.github.io/about<br>
 
 ## Rule
 - **Repositories Name Rule**
-  - **bot**_~ : automation bot
+  - **bot**_~ : automation bot, GitHub Actions
   - **crawl**_~ : Selenium, Requests
   - **framework**_~ : Django, FastAPI, Streamlit
   - **fork**_ : fork repositories
