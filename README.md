@@ -24,6 +24,7 @@ info : https://pozuhtuhv.github.io/about<br>
 - **Repositories Name Rule**
   - **bot**_~ : automation bot, GitHub Actions
   - **crawl**_~ : Selenium, Requests
+  - **dacon**_~ : Dacon Data analytics
   - **framework**_~ : Django, FastAPI, Streamlit
   - **fork**_ : fork repositories
   - **git**_~ : git_external
