@@ -6,6 +6,7 @@
 <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white">
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white">
 <img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white">
 <h4>Visualization</h4>
 <img src="https://img.shields.io/badge/Looker-4285F4?style=flat-square&logo=Looker&logoColor=white">
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white">
