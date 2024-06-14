@@ -19,7 +19,7 @@
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
 <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white">
 <img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
-<img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white">
+<img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white"><br>
 <br>
 info : https://pozuhtuhv.github.io/about<br>
 </div>
