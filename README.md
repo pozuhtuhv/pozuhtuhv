@@ -30,7 +30,6 @@ info : https://pozuhtuhv.github.io/about<br>
 - **Repositories Name Rule**
   - **crawl**_~ : Selenium, Requests
   - **dacon**_~ : Dacon Data analytics
-  - **edu**_~ : Code Edu
   - **framework**_~ : Django, FastAPI, Streamlit
   - **fork**_ : fork repositories
   - **git**_~ : git_external
