@@ -24,6 +24,8 @@
 info : https://pozuhtuhv.github.io/about<br>
 </div>
 
+## Goal
+- Component Save
 ## Rule
 - **Repositories Name Rule**
   - **bot**_~ : automation bot, GitHub Actions
