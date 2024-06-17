@@ -28,7 +28,6 @@ info : https://pozuhtuhv.github.io/about<br>
 - Component Save
 ## Rule
 - **Repositories Name Rule**
-  - **bot**_~ : automation bot, GitHub Actions
   - **crawl**_~ : Selenium, Requests
   - **dacon**_~ : Dacon Data analytics
   - **edu**_~ : Code Edu
