@@ -28,6 +28,7 @@ info : https://pozuhtuhv.github.io/about<br>
 - Component Save
 ## Rule
 - **Repositories Name Rule**
+  - **bot**_~ : automation, git_action
   - **crawl**_~ : Selenium, Requests
   - **dacon**_~ : Dacon Data analytics
   - **framework**_~ : Django, FastAPI, Streamlit
