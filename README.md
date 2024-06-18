@@ -31,11 +31,10 @@ info : https://pozuhtuhv.github.io/about<br>
   - **bot**_~ : automation, git_action
   - **crawl**_~ : Selenium, Requests
   - **dacon**_~ : Dacon Data analytics
-  - **framework**_~ : Django, FastAPI, Streamlit
   - **fork**_ : fork repositories
+  - **framework**_~ : Django, FastAPI, Streamlit
   - **git**_~ : git_external
-  - **gui**_~ : tkinter, PySide6
-    
+  - **gui**_~ : tkinter, PySide6 
 - **Commit Comment Rule**
   - **add**: 추가 
   - **upload**: 업로드
