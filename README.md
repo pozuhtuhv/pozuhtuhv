@@ -29,7 +29,7 @@ info : https://pozuhtuhv.github.io/about<br>
 ## Rule
 - **Repositories Name Rule**
   - **bot**_~ : automation, git_action
-  - **crawl**_~ : Selenium, Requests
+  - **crawl**_~ : Selenium, Playwright, Requests
   - **dacon**_~ : Dacon Data analytics
   - **fork**_ : fork repositories
   - **framework**_~ : Django, FastAPI, Streamlit
