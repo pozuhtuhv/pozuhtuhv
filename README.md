@@ -14,7 +14,8 @@
 <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white">
 <img src="https://img.shields.io/badge/Actions-181717?style=flat-square&logo=GithubActions&logoColor=white">
 <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white">
-<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white"><br>
+<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white">
+<img src="https://img.shields.io/badge/Playwright-43B02A?style=flat-square&logo=Playwright&logoColor=white"><br>
 <h4>Data & Framework (Edu ~ing)</h4>
 <img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
 <img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white">
