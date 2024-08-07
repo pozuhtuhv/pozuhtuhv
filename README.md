@@ -29,6 +29,7 @@ info : https://pozuhtuhv.github.io/about<br>
 - Component Save
 ## Rule
 - **Repositories Name Rule**
+  - **api** : api service 
   - **bot**_~ : automation, git_action
   - **crawl**_~ : Selenium, Playwright, Requests
   - **dacon**_~ : Dacon Data analytics
