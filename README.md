@@ -38,6 +38,7 @@ info : https://pozuhtuhv.github.io/about<br>
   - **git**_~ : git_external
   - **gui**_~ : tkinter, PySide6
   - **etc**: etc
+  - **service** : service
 - **Commit Comment Rule**
   - **add**: 추가 
   - **upload**: 업로드
