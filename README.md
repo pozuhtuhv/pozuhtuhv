@@ -1,5 +1,8 @@
 <div align="center">
-<h3>Tech Stack</h3>
+<h3>minimal: less is more.</h3>
+<details>
+<summary>Summary</summary>
+<h4>Tech Stack</h4>
 <h4>Main</h4>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
 <h4>DB</h4>
@@ -22,12 +25,11 @@
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
 <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"><br>
 <br>
-info : https://pozuhtuhv.github.io/about<br>
 </div>
+</details>
 
-## Goal
-- Component Save
-## Rule
+<!-- info : https://pozuhtuhv.github.io/about<br> -->
+<!--- ### Rule
 - **Repositories Name Rule**
   - **api** : api service 
   - **bot**_~ : automation, git_action
@@ -39,7 +41,8 @@ info : https://pozuhtuhv.github.io/about<br>
   - **gui**_~ : tkinter, PySide6
   - **etc**: etc
   - **service** : service
-- **Commit Comment Rule**
+
+<!--- **Commit Comment Rule**
   - **add**: 추가 
   - **upload**: 업로드
   - **edit**: 수정
