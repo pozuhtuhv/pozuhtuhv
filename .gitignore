@@ -1,6 +1,6 @@
-file name: .gitignore
+# file name: .gitignore
 
-description :
+# description :
 /__pycache__
 /include
 /Lib
