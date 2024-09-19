@@ -29,6 +29,25 @@
 </div>
 </details>
 
+<details>
+  <summary>See test</summary>
+  <div>
+      <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+          <foreignObject x="0" y="0" width="100%" height="100%">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Courier New', monospace; color: green; background-color: black; height: 100%; display: flex; align-items: center; justify-content: center;">
+                  <pre style="animation: typing 4s steps(30, end); white-space: nowrap; overflow: hidden;">Booting up... Please wait.</pre>
+              </div>
+          </foreignObject>
+          <style>
+              @keyframes typing {
+                  from { width: 0; }
+                  to { width: 100%; }
+              }
+          </style>
+      </svg>
+  </div>
+</details>
+
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
 <!--- ### Rule
 - **Repositories Name Rule**
