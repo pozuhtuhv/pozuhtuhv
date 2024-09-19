@@ -27,6 +27,19 @@
 <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"><br>
 <br>
 </div>
+
+![Command Prompt](https://raw.githubusercontent.com/pozuhtuhv/svgtest/9a81c24e025ae27e6989b622f8e15ca00a6bf15c/svtest.svg){: style="animation: shake 0.5s; animation-iteration-count: infinite;" }
+
+<style>
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-5px); }
+  50% { transform: translate(5px); }
+  75% { transform: translate(-5px); }
+  100% { transform: translate(0); }
+}
+</style>
+
 </details>
 
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
