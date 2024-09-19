@@ -29,31 +29,6 @@
 </div>
 </details>
 
-<details>
-  <summary>See test</summary>
-  <div>
-    <svg width="500" height="100">
-      <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 24px; color: black;">
-          <span id="typing-effect"></span>
-        </div>
-      </foreignObject>
-      <script>
-        const text = "타이핑 효과를 보여줍니다.";
-        let index = 0;
-        const typingEffect = () => {
-          if (index < text.length) {
-            document.getElementById("typing-effect").innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typingEffect, 100); // 100ms 간격으로 타이핑
-          }
-        };
-        typingEffect();
-      </script>
-    </svg>
-  </div>
-</details>
-
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
 <!--- ### Rule
 - **Repositories Name Rule**
