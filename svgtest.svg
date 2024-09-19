@@ -60,7 +60,36 @@
   <line x1="554" x2="563" y1="25"  y2="15" stroke="white"/>
 
   <!-- 명령프롬프트 텍스트 -->
-  <text x="10" y="58" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">Microsoft Windows [Version 10.0.22631.4169]</text>
-  <text x="10" y="78" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">(c) Microsoft Corporation. All rights reserved.</text>
-  <text x="10" y="119" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
+  <foreignObject x="10" y="58" width="200" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Cascadia Mono'; font-size: 12px; color: #A6A6A6;">
+      <span id="typing-effect"></span>
+    </div>
+  </foreignObject>
+
+  <script>
+    const texts = [
+      "Microsoft Windows [Version 10.0.22631.4169]",
+      "(c) Microsoft Corporation. All rights reserved.",
+      "C:\\Users\\pozuhtuhv>"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+
+    const typingEffect = () => {
+      if (textIndex < texts.length) {
+        if (charIndex < texts[textIndex].length) {
+          document.getElementById("typing-effect").innerHTML += texts[textIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typingEffect, 100); // 100ms 간격으로 타이핑
+        } else {
+          charIndex = 0;
+          textIndex++;
+          document.getElementById("typing-effect").innerHTML += "<br/>"; // 줄 바꿈
+          setTimeout(typingEffect, 500); // 다음 텍스트로 넘어가기 전 대기
+        }
+      }
+    };
+    typingEffect();
+  </script>
+
 </svg>
