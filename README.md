@@ -26,6 +26,23 @@
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
 <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"><br>
 <br>
+<h4>New SVG Animation Example</h4>
+<div style="overflow: hidden; height: 200px;">
+    <img src="https://raw.githubusercontent.com/pozuhtuhv/svgtest/9a81c24e025ae27e6989b622f8e15ca00a6bf15c/svtest.svg" alt="SVG Effect" style="animation: slide-in 1s forwards;">
+</div>
+<style>
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+</style>
+<br>
 </div>
 </details>
 
