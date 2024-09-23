@@ -29,6 +29,11 @@
 </div>
 </details>
 
+<details>
+  <summary>info...</summary>
+  <img src="/svgtest.svg"><br>
+</details>
+
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
 <!--- ### Rule
 - **Repositories Name Rule**
