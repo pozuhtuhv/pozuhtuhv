@@ -12,6 +12,19 @@
         clip-path: inset(0 0 0 0); /* 전체가 나타남 */
       }
     }
+
+    /* 애니메이션 지연 설정 */
+    #line1 {
+      animation-delay: 0s;
+    }
+
+    #line2 {
+      animation-delay: 1s; /* line1 끝나고 1초 뒤에 시작 */
+    }
+
+    #line3 {
+      animation-delay: 2s; /* line2 끝나고 1초 뒤에 시작 */
+    }
   </style>
 
   <!-- 배경 시작 -->
@@ -82,22 +95,4 @@
   <text id="line1" class="animate-text" x="10" y="58" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">Microsoft Windows [Version 10.0.22631.4169]</text>
   <text id="line2" class="animate-text" x="10" y="78" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">(c) Microsoft Corporation. All rights reserved.</text>
   <text id="line3" class="animate-text" x="10" y="119" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
-
-  <script>
-    // 첫 번째 라인의 애니메이션이 끝나면 두 번째 라인의 애니메이션 시작
-    document.getElementById('line1').addEventListener('animationend', function() {
-      document.getElementById('line2').style.animationDelay = '0s';
-      document.getElementById('line2').style.animationPlayState = 'running';
-    });
-
-    // 두 번째 라인의 애니메이션이 끝나면 세 번째 라인의 애니메이션 시작
-    document.getElementById('line2').addEventListener('animationend', function() {
-      document.getElementById('line3').style.animationDelay = '0s';
-      document.getElementById('line3').style.animationPlayState = 'running';
-    });
-
-    // 기본적으로 애니메이션 시작 전 일시정지
-    document.getElementById('line2').style.animationPlayState = 'paused';
-    document.getElementById('line3').style.animationPlayState = 'paused';
-  </script>
 </svg>
