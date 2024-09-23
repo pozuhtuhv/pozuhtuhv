@@ -30,9 +30,8 @@
 </details>
 
 <details>
-<br>
-  <div align="center">
   <summary>info...</summary>
+  <div align="center">
   <img src="/svgtest.svg">
   </div>
 </details>
