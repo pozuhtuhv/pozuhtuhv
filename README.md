@@ -30,8 +30,11 @@
 </details>
 
 <details>
+<br>
+  <div align="center">
   <summary>info...</summary>
-  <img src="/svgtest.svg"><br>
+  <img src="/svgtest.svg">
+  </div>
 </details>
 
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
