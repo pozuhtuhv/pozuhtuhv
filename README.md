@@ -31,9 +31,7 @@
 
 <details>
   <summary>info...</summary>
-  <div align="center">
   <img src="/svgtest.svg">
-  </div>
 </details>
 
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
