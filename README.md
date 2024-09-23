@@ -31,6 +31,7 @@
 
 <details>
   <summary>info...</summary>
+  <br>
   <img src="/svgtest.svg">
 </details>
 
