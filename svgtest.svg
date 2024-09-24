@@ -1,34 +1,59 @@
 <svg width="583" height="305" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* 텍스트 끊어서 나타나게 하는 애니메이션 */
-    .animate-text {
-      clip-path: inset(0 100% 0 0); /* 오른쪽을 잘라냄 */
-      animation: reveal-text 1s steps(20) forwards;
+    .background1 {
+      clip-path: inset(0 0 100% 0);
+      animation: reveal-text 1s steps(4) forwards;
     }
 
-    /* 끊겨서 나타나게 하는 애니메이션 */
+    .command {
+      clip-path: inset(0 100% 0 0);
+      animation: reveal-text 0.02s steps(23) forwards;
+    }
+
+    .path {
+      clip-path: inset(0 100% 0 0);
+      animation: reveal-text 0.02s steps(23) forwards;
+    }
+
+    .content {
+      clip-path: inset(0 100% 0 0);
+      animation: reveal-text 0.02s steps(23) forwards;
+    }
+
     @keyframes reveal-text {
       to {
-        clip-path: inset(0 0 0 0); /* 전체가 나타남 */
+        clip-path: inset(0 0 0 0);
       }
     }
 
     /* 애니메이션 지연 설정 */
     #line1 {
-      animation-delay: 0s;
+      animation-delay: 0.5s;
     }
 
     #line2 {
-      animation-delay: 1s; /* line1 끝나고 1초 뒤에 시작 */
+      animation-delay: 0.8s;
     }
 
-    #line3 {
-      animation-delay: 2s; /* line2 끝나고 1초 뒤에 시작 */
+    #line3{
+      animation-delay: 2s;
+    }
+
+    #line4{
+      animation-delay: 2.5s;
+    }
+
+    #line5, #line6, #line7, #line8, #line9{
+      animation-delay: 2.6s;
+    }
+
+    #line10{
+      animation-delay: 2.8s;
     }
   </style>
 
   <!-- 배경 시작 -->
-  <g>
+  <g class="background1">
     <!-- 전체 배경 (명령 프롬프트 창 배경) -->
     <rect width="100%" height="100%" fill="black" rx="10" ry="10"/>
 
@@ -92,7 +117,14 @@
   <!-- 배경 끝 -->
 
   <!-- 명령프롬프트 텍스트 -->
-  <text id="line1" class="animate-text" x="10" y="58" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">Microsoft Windows [Version 10.0.22631.4169]</text>
-  <text id="line2" class="animate-text" x="10" y="78" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">(c) Microsoft Corporation. All rights reserved.</text>
-  <text id="line3" class="animate-text" x="10" y="119" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
+  <text id="line1" class="command" x="10" y="60" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">Microsoft Windows [Version 10.0.22631.4169]</text>
+  <text id="line2" class="command" x="10" y="80" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">(c) Microsoft Corporation. All rights reserved.</text>
+  <text id="line3" class="path" x="10" y="120" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
+  <text id="line4" class="command" x="145" y="120" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">user info</text>
+  <text id="line5" class="content" x="10" y="140" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
+  <text id="line6" class="content" x="10" y="160" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">name : Hyeonseok-Cho</text>
+  <text id="line7" class="content" x="10" y="180" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">id : pozuhtuhv</text>
+  <text id="line8" class="content" x="10" y="200" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">email : pozuhtuhv@gmail.com</text>
+  <text id="line9" class="command" x="10" y="220" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
+  <text id="line10" class="path" x="10" y="240" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
 </svg>
