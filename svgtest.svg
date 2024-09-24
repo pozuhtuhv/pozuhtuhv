@@ -7,7 +7,7 @@
 
     .command {
       clip-path: inset(0 100% 0 0);
-      animation: reveal-text 0.02s steps(23) forwards;
+      animation: reveal-text 0.1s steps(23) forwards;
     }
 
     .path {
