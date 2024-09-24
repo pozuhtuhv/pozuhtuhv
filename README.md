@@ -3,7 +3,7 @@
 </div>
 <div align="left">
 <details>
-<summary>more...</summary>
+<summary>stack...</summary>
 <h4>Stack</h4>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
 <h4>Database & Server</h4>
