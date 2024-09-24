@@ -1,13 +1,8 @@
-<svg width="583" height="305" xmlns="http://www.w3.org/2000/svg">
+<svg width="583" height="500" xmlns="http://www.w3.org/2000/svg">
   <style>
     .background1 {
       clip-path: inset(0 0 100% 0);
       animation: reveal-text 1s steps(4) forwards;
-    }
-
-    .command {
-      clip-path: inset(0 100% 0 0);
-      animation: reveal-text 0.1s steps(23) forwards;
     }
 
     .path {
@@ -17,7 +12,7 @@
 
     .content {
       clip-path: inset(0 100% 0 0);
-      animation: reveal-text 0.02s steps(23) forwards;
+      animation: reveal-text 0.001s steps(23) forwards;
     }
 
     @keyframes reveal-text {
@@ -43,16 +38,24 @@
       animation-delay: 2.5s;
     }
 
-    #line5, #line6, #line7, #line8, #line9{
+    #line5, #line6, #line7, #line8, #line9, #line10{
       animation-delay: 2.6s;
     }
 
-    #line10{
+    #line11{
       animation-delay: 2.8s;
+    }
+
+    #line12{
+      animation-delay: 3s;
+    }
+
+    #line13, #line14, #line15, #line16, #line17{
+      animation-delay: 3.2s;
     }
   </style>
 
-  <!-- 배경 시작 -->
+  <!-- background start -->
   <g class="background1">
     <!-- 전체 배경 (명령 프롬프트 창 배경) -->
     <rect width="100%" height="100%" fill="black" rx="10" ry="10"/>
@@ -81,7 +84,7 @@
     </svg>
 
     <!-- 제목 텍스트 -->
-    <text x="42" y="32" font-family="나눔 고딕" font-size="13" fill="white">명령 프롬프트</text>
+    <text x="42" y="32" font-family="나눔 고딕" font-size="13" fill="white">Command Prompt</text>
 
     <!-- 탭 닫기 -->
     <line x1="223" x2="231" y1="19" y2="27" stroke="white"/>
@@ -114,17 +117,26 @@
     <line x1="554" x2="563" y1="15" y2="25" stroke="white"/>
     <line x1="554" x2="563" y1="25"  y2="15" stroke="white"/>
   </g>
-  <!-- 배경 끝 -->
+  <!-- background end -->
 
-  <!-- 명령프롬프트 텍스트 -->
+  <!-- Command Prompt Text -->
   <text id="line1" class="command" x="10" y="60" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">Microsoft Windows [Version 10.0.22631.4169]</text>
   <text id="line2" class="command" x="10" y="80" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">(c) Microsoft Corporation. All rights reserved.</text>
-  <text id="line3" class="path" x="10" y="120" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
-  <text id="line4" class="command" x="145" y="120" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">user info</text>
+  
+  <!-- command1 -->
+  <text id="line3" class="path" x="10" y="120" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\[login]>user info</text>
   <text id="line5" class="content" x="10" y="140" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
-  <text id="line6" class="content" x="10" y="160" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">name : Hyeonseok-Cho</text>
-  <text id="line7" class="content" x="10" y="180" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">id : pozuhtuhv</text>
-  <text id="line8" class="content" x="10" y="200" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">email : pozuhtuhv@gmail.com</text>
-  <text id="line9" class="command" x="10" y="220" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
-  <text id="line10" class="path" x="10" y="240" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\pozuhtuhv></text>
+  <text id="line6" class="content" x="10" y="160" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">created : [created_at]　</text>
+  <text id="line6" class="content" x="10" y="180" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">name : [name]　</text>
+  <text id="line7" class="content" x="10" y="200" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">id : [login] / uid : [userid]　</text>
+  <text id="line9" class="content" x="10" y="220" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">follows: [followers]  following: [following]　</text>
+  <text id="line10" class="content" x="10" y="240" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
+  
+  <!-- command2 -->
+  <text id="line11" class="path" x="10" y="260" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">C:\Users\[login]>user repositories</text>
+  <text id="line13" class="content" x="10" y="280" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
+  <text id="line14" class="content" x="10" y="300" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">total : [total_repos] / size : [size] / stared : [stars]　</text>
+  <text id="line15" class="content" x="10" y="320" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">top languages : [top_languages]　</text>
+  <text id="line15" class="content" x="10" y="340" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6">commits : [commit]　</text>
+  <text id="line17" class="content" x="10" y="360" font-family="Cascadia Mono" font-size="12" fill="#A6A6A6"></text>
 </svg>
