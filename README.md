@@ -32,7 +32,9 @@
 <details>
   <summary>info...</summary>
   <br>
-  <img src="/svgtest.svg">
+  <div align="center">
+    <img src="/svgtest.svg">
+  </div>
 </details>
 
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
