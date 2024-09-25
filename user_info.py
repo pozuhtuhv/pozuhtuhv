@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-github_actor = sys.argv[1]
+github_actor = os.getenv('github_actor')
 
 # GitHub API에서 유저 정보를 가져오기 위한 함수
 def fetch_user_info(username):
