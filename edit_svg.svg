@@ -1,0 +1,138 @@
+<!-- div setting svg -->
+<svg width="583" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      color: #A6A6A6;
+      font-family: "Cascadia Mono", monospace;
+      font-size: 12px;
+    }
+
+    .text-line {
+      overflow: hidden;
+      white-space: nowrap;
+      clip-path: inset(0 100% 0 0);
+      animation: reveal-text 0.2s steps(20) forwards;
+    }
+
+    /* 애니메이션 딜레이 */
+    .line1 { 
+      animation-delay: 0.5s; 
+      }
+
+    .line2 {
+      animation-delay: 0.8s; 
+      }
+
+    .line4 { 
+      animation-delay: 1.2s; 
+      }
+
+    .line5 {
+      animation-delay: 1.5s;
+    }
+
+    .line7, .line8, .line9, .line10 {
+      animation-delay: 1.8s;
+    }
+
+    .line12 {
+      animation-delay: 2.2s;
+    }
+
+    .line13 {
+      animation-delay: 2.5s;
+    }
+
+
+    .line15, .line16, .line17 {
+      animation-delay: 3s;
+    }
+    @keyframes reveal-text {
+      to {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+  </style>
+
+  <!-- 배경 -->
+  <rect width="100%" height="100%" fill="black" rx="10" ry="10"/>
+
+  <!-- 탭 바 -->
+  <rect width="100%" height="40" fill="#333333" rx="10" ry="10"/>
+  <rect y="31" width="100%" height="9" fill="#333333"/>
+
+  <!-- 탭 내부 -->
+  <rect x="9" y="8" width="240" height="40" fill="Black" rx="10" ry="10"/>
+
+  <!-- 명령 프롬프트 아이콘 -->
+  <svg x="15" y="14" width="20px" height="20px" fill="none">
+    <path d="M4.5 10.7C4.5 9.57989 4.5 9.01984 4.71799 8.59202C4.90973 8.21569 5.21569 7.90973 5.59202 7.71799C6.01984 7.5 6.5799 7.5 7.7 7.5H16.3C17.4201 7.5 17.9802 7.5 18.408 7.71799C18.7843 7.90973 19.0903 8.21569 19.282 8.59202C19.5 9.01984 19.5 9.57989 19.5 10.7V14.3C19.5 15.4201 19.5 15.9802 19.282 16.408C19.0903 16.7843 18.7843 17.0903 18.408 17.282C17.9802 17.5 17.4201 17.5 16.3 17.5H7.7C6.57989 17.5 6.01984 17.5 5.59202 17.282C5.21569 17.0903 4.90973 16.7843 4.71799 16.408C4.5 15.9802 4.5 15.4201 4.5 14.3V10.7Z" stroke="white"/>
+    <path d="M7.5 10.5L9.5 12.5L7.5 14.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.5 14.5H16.5" stroke="white" stroke-linecap="round"/>
+  </svg>
+
+  <!-- 제목 텍스트 -->
+  <text x="42" y="32" font-family="Cascadia Mono" font-size="13" fill="white">Command Prompt</text>
+
+  <!-- 탭 닫기 -->
+  <line x1="223" x2="231" y1="19" y2="27" stroke="white"/>
+  <line x1="223" x2="231" y1="27" y2="19" stroke="white"/>
+
+  <!-- 탭 추가 -->
+  <line x1="270" x2="270" y1="19" y2="29" stroke="white"/>
+  <line x1="265" x2="275" y1="24" y2="24" stroke="white"/>
+
+  <!-- 구분선 -->
+  <line x1="286" x2="286" y1="13" y2="36" stroke="#3D3D3D"/>
+
+  <!-- 메뉴 -->
+  <line x1="296" x2="300" y1="23" y2="26" stroke="white"/>
+  <line x1="299" x2="303" y1="26" y2="23" stroke="white"/>
+
+  <!-- 최소화 버튼 -->
+  <line x1="461" x2="471" y1="20" y2="20" stroke="white"/>
+
+  <!-- 최대화 버튼 -->
+  <!-- 세로선 -->  
+  <line x1="508" x2="508" y1="16" y2="25" stroke="white"/>
+  <line x1="517" x2="517" y1="25" y2="16" stroke="white"/>
+  <!-- 가로선 -->
+  <line x1="508" x2="517" y1="16" y2="16" stroke="white"/>
+  <line x1="508" x2="517" y1="25" y2="25" stroke="white"/>
+
+  <!-- 창 닫기 버튼 -->
+  <line x1="554" x2="563" y1="15" y2="25" stroke="white"/>
+  <line x1="554" x2="563" y1="25" y2="15" stroke="white"/>
+
+  <!-- foreignObject를 사용하여 HTML 요소 포함 -->
+  <foreignObject x="10" y="50" width="563" height="400">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="text-container">
+      <!-- 기본 정보 출력 -->
+      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4169]</div>
+      <div class="text-line line2">(c) Microsoft Corporation. All rights reserved.</div>
+      <div class="text-line line3">　</div>
+      <div class="text-line line4">C:\Users\[login]&gt;<span class="text-line line5">user info</span></div>
+      
+      <!-- 유저 정보 -->
+      <div class="text-line line6">　</div>
+      <div class="text-line line7">created : [created_at]</div>
+      <div class="text-line line8">name : [name]</div>
+      <div class="text-line line9">id : [login] / uid : [userid]</div>
+      <div class="text-line line10">follows: [followers] following: [following]</div>
+      
+      <!-- 빈 줄 추가 -->
+      <div class="text-line line11">　</div>
+      
+      <!-- 커맨드2: user repositories -->
+      <div class="text-line line12">C:\Users\[login]&gt;<span class="text-line line13">user repositories</span> </div>
+      
+      <!-- 레포지토리 정보 -->
+      <div class="text-line line14">　</div>
+      <div class="text-line line15">total : [total_repos] - size : [size] - stared : [stars]</div>
+      <div class="text-line line16">commits : [commit]</div>
+      <div class="text-line line17">languages : [top_languages]</div>
+    </div>
+  </foreignObject>
+</svg>
