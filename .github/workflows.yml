@@ -1,0 +1,14 @@
+name: Print GitHub Actor
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-actor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub Actor
+        run: |
+          echo "GitHub Actor: ${{ github.actor }}"
