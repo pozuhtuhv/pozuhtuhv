@@ -33,7 +33,7 @@
   <summary>info...</summary>
   <br>
   <div align="center">
-    <img src="/main_svg.svg">
+    <img src="svg/main_svg.svg">
   </div>
 </details>
 
