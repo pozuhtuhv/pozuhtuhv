@@ -17,10 +17,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-          
-    - name: Fetch GitHub Actor Info
-      run: |
-        echo "GITHUB_ACTOR=${{ github.actor }}" >> $GITHUB_ENV
         
     - name: Install dependencies
       run: |
@@ -28,4 +24,4 @@ jobs:
         pip install requests
 
     - name: Run Python script
-      run: python user_info.py
+      run: python user_info.py ${{ github.actor }}
