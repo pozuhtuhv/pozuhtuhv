@@ -20,4 +20,5 @@ jobs:
           pip install requests
           
       - name: Run Python script
-        run: python user_info.py ${{ github.actor }}
+        run: |
+          python user_info.py ${{ github.actor }}
