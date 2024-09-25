@@ -13,6 +13,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          
       - name: Run Python script
-        run: python3 user_info.py ${{ github.actor }}
+        run: python user_info.py ${{ github.actor }}
