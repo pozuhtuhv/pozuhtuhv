@@ -1,14 +1,18 @@
-name: Print GitHub Actor
+name: Fetch GitHub User Info
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
 jobs:
-  print-actor:
+  fetch-info:
     runs-on: ubuntu-latest
     steps:
-      - name: Print GitHub Actor
-        run: |
-          echo "GitHub Actor: ${{ github.actor }}"
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Run Python script
+        run: python3 user_info.py ${{ github.actor }}
