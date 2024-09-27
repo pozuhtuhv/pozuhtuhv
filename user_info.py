@@ -6,12 +6,13 @@ import xml.etree.ElementTree as ET
 import hashlib
 
 github_actor = os.getenv('github_actor')
+# github_actor = 'pozuhtuhv'
 
 # svg 폴더 없으면 만들기
 os.makedirs('svg', exist_ok=True)
 
 # 기존 SVG 파일 경로 및 출력 SVG 파일 경로
-origin_svg_file_path = 'svg/edit_svg.svg'
+origin_svg_file_path = 'svg/origin_svg.svg'
 output_svg_file_path = 'svg/main_svg.svg'
 
 # GitHub API에서 유저 정보를 가져오기 위한 함수
@@ -184,7 +185,7 @@ def update_svg(user_info, origin_svg_file_path, filename):
     root.find(".//xhtml:div[@class='text-line line8']", ns).text = f"name : {user_info['name']}"
     root.find(".//xhtml:div[@class='text-line line9']", ns).text = f"id : {user_info['login']} / uid : {user_info['uid']}"
     root.find(".//xhtml:div[@class='text-line line10']", ns).text = f"follows: {user_info['followers']} following: {user_info['following']}"
-    root.find(".//xhtml:div[@class='text-line line12']", ns).text = f"C:\\Users\\{user_info['login']}>user info"
+    root.find(".//xhtml:div[@class='text-line line12']", ns).text = f"C:\\Users\\{user_info['login']}>user repositories"
 
     # 레포지토리 정보 수정
     root.find(".//xhtml:div[@class='text-line line15']", ns).text = f"total : {user_info['total_repos']} - size : {user_info['size']} - stared : {user_info['stars']}"
@@ -197,7 +198,7 @@ def update_svg(user_info, origin_svg_file_path, filename):
 
     temp_filename = f"{filename}.temp"
     with open(temp_filename, 'w', encoding='utf-8') as temp_file:
-        temp_file.write(output_svg_file_path, encoding="utf-8", xml_declaration=True)
+        tree.write(output_svg_file_path, encoding="utf-8", xml_declaration=True)
         
     # 기존 파일이 있는 경우 해시를 비교하여 내용이 동일한지 확인
     if os.path.exists(filename) and calculate_file_hash(filename) == calculate_file_hash(temp_filename):
