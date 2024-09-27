@@ -34,5 +34,5 @@ jobs:
         git config --local user.email "pozuhtuhv@gmail.com"
         git config --local user.name "Hyeonseok-Cho"
         git add -A
-        git commit -m "(update) svg_data"
+        git commit -m "(update) auto_svg_data"
         git push
