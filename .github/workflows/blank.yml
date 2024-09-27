@@ -27,3 +27,12 @@ jobs:
       env:
         github_actor: ${{ github.actor }}
       run: python user_info.py
+
+# Git Push
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "pozuhtuhv@gmail.com"
+        git config --local user.name "Hyeonseok-Cho"
+        git add -A
+        git commit -m "(update) svg_data"
+        git push
