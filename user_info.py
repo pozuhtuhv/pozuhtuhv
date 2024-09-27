@@ -178,14 +178,14 @@ def update_svg(user_info, origin_svg_file_path, filename):
     ns = {'svg': 'http://www.w3.org/2000/svg', 'xhtml': 'http://www.w3.org/1999/xhtml'}
     
     # 기본 정보를 수정 (user info 출력 부분)
-    root.find(".//xhtml:div[@class='text-line line4']", ns).text = f"C:\\Users\\{user_info['login']}>user info"
+    root.find(".//xhtml:div[@class='text-line line4']", ns).text = f"C:\\Users\\{user_info['login']}>"
     
     # 유저 정보 부분 수정
     root.find(".//xhtml:div[@class='text-line line7']", ns).text = f"created : {user_info['created_at']}"
     root.find(".//xhtml:div[@class='text-line line8']", ns).text = f"name : {user_info['name']}"
     root.find(".//xhtml:div[@class='text-line line9']", ns).text = f"id : {user_info['login']} / uid : {user_info['uid']}"
     root.find(".//xhtml:div[@class='text-line line10']", ns).text = f"follows: {user_info['followers']} following: {user_info['following']}"
-    root.find(".//xhtml:div[@class='text-line line12']", ns).text = f"C:\\Users\\{user_info['login']}>user repositories"
+    root.find(".//xhtml:div[@class='text-line line12']", ns).text = f"C:\\Users\\{user_info['login']}>"
 
     # 레포지토리 정보 수정
     root.find(".//xhtml:div[@class='text-line line15']", ns).text = f"total : {user_info['total_repos']} - size : {user_info['size']} - stared : {user_info['stars']}"
