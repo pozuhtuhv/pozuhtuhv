@@ -9,11 +9,8 @@ github_actor = os.getenv('github_actor')
 # github_actor = 'pozuhtuhv'
 
 # svg 폴더 없으면 만들기
-os.makedirs('svg', exist_ok=True)
-
-# 기존 SVG 파일 경로 및 출력 SVG 파일 경로
-origin_svg_file_path = 'svg/origin_svg.svg'
-output_svg_file_path = 'svg/main_svg.svg'
+SVG_DIR = 'svg'
+os.makedirs(SVG_DIR, exist_ok=True)
 
 # GitHub API에서 유저 정보를 가져오기 위한 함수
 def fetch_user_info(username):
@@ -195,18 +192,16 @@ def update_svg(user_info, origin_svg_file_path, filename):
     languages_str = ', '.join([f"{k}: {v}" for k, v in user_info['languages'].items()])
     root.find(".//xhtml:div[@class='text-line line17']", ns).text = f"languages : {languages_str}"
 
-
     temp_filename = f"{filename}.temp"
-    with open(temp_filename, 'w', encoding='utf-8') as temp_file:
-        tree.write(output_svg_file_path, encoding="utf-8", xml_declaration=True)
+    tree.write(temp_filename, encoding="utf-8", xml_declaration=True)
         
     # 기존 파일이 있는 경우 해시를 비교하여 내용이 동일한지 확인
     if os.path.exists(filename) and calculate_file_hash(filename) == calculate_file_hash(temp_filename):
         print(f'{filename} 파일의 내용이 동일하여 덮어쓰지 않습니다.')
         os.remove(temp_filename)  # 임시 파일 삭제
     else:
-        os.rename(temp_filename, filename)
+        os.rename(temp_filename, filename)  # 임시 파일을 원본 파일로 덮어쓰기
         print(f'{filename} 저장 완료')
 
 # SVG 파일 업데이트
-update_svg(user_info, origin_svg_file_path, output_svg_file_path)
+update_svg(user_info, os.path.join(SVG_DIR, 'origin_svg.svg'), os.path.join(SVG_DIR, 'main_svg.svg'))
