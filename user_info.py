@@ -7,8 +7,12 @@ import hashlib
 
 github_actor = os.getenv('github_actor')
 
-DATA_DIR = 'svg'
-os.makedirs(DATA_DIR, exist_ok=True)
+# svg 폴더 없으면 만들기
+os.makedirs('svg', exist_ok=True)
+
+# 기존 SVG 파일 경로 및 출력 SVG 파일 경로
+origin_svg_file_path = 'svg/edit_svg.svg'
+output_svg_file_path = 'svg/main_svg.svg'
 
 # GitHub API에서 유저 정보를 가져오기 위한 함수
 def fetch_user_info(username):
@@ -164,9 +168,9 @@ def calculate_file_hash(file_path):
     return hasher.hexdigest()
 
 # 유저 정보를 업데이트하는 함수
-def update_svg(user_info, svg_file_path, output_svg_file_path, filename):
+def update_svg(user_info, origin_svg_file_path, filename):
     # SVG 파일 읽기
-    tree = ET.parse(svg_file_path)
+    tree = ET.parse(origin_svg_file_path)
     root = tree.getroot()
     
     # XML 네임스페이스 설정
@@ -203,9 +207,5 @@ def update_svg(user_info, svg_file_path, output_svg_file_path, filename):
         os.rename(temp_filename, filename)
         print(f'{filename} 저장 완료')
 
-# 기존 SVG 파일 경로 및 출력 SVG 파일 경로
-svg_file_path = 'edit_svg.svg'
-output_svg_file_path = 'main_svg.svg'
-
 # SVG 파일 업데이트
-update_svg(user_info, svg_file_path, output_svg_file_path, os.path.join(DATA_DIR, f'{output_svg_file_path}'))
+update_svg(user_info, origin_svg_file_path, output_svg_file_path)
