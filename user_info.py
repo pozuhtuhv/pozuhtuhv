@@ -5,7 +5,7 @@ from datetime import datetime
 import hashlib
 import re
 
-github_actor = os.getenvs('github_actor')
+github_actor = os.getenv('github_actor')
 # github_actor = 'pozuhtuhv'
 
 # svg 폴더 없으면 만들기
