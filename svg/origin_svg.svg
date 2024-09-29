@@ -49,7 +49,7 @@
       animation-delay: 3s;
     }
 
-    .line18 {
+    .line19 {
       animation-delay: 3.4s;
     }
 
@@ -157,7 +157,7 @@
       <div class="text-line line16">activity times : [commit]</div>
       <div class="text-line line17">languages : [top_languages]</div>
       <div class="text-line line18">　</div>
-      <div class="text-line line18">C:\Users\[login]&gt;<span class="blink_cursor">|</span></div>
+      <div class="text-line line19">C:\Users\[login]&gt;<span class="blink_cursor">|</span></div>
 
     </div>
   </foreignObject>
