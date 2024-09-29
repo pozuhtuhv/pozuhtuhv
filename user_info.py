@@ -151,10 +151,6 @@ def fetch_commit_statistics(username):
 
     return commit_times
 
-# svg 폴더 없으면 만들기
-SVG_DIR = 'svg'
-os.makedirs(SVG_DIR, exist_ok=True)
-
 def update_svg_with_regex(user_info, origin_svg_file_path, filename):
     # SVG 파일 읽기
     with open(origin_svg_file_path, 'r', encoding='utf-8') as file:
@@ -172,6 +168,7 @@ def update_svg_with_regex(user_info, origin_svg_file_path, filename):
     
     languages_str = ', '.join([f"{k}: {v}" for k, v in user_info['languages'].items()])
     svg_data = re.sub(r'(<div class="text-line line17">)[^<]+(</div>)', f"\\1languages : {languages_str}\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line19">)[^<]+(<span)', f"\\1C:\\\\Users\\\\{user_info['login']}>\\2", svg_data)
 
     # 수정된 SVG를 파일에 저장
     with open(filename, 'w', encoding='utf-8') as file:
