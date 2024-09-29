@@ -2,10 +2,10 @@ import os
 import requests
 from collections import defaultdict
 from datetime import datetime
-import xml.etree.ElementTree as ET
 import hashlib
+import re
 
-github_actor = os.getenv('github_actor')
+github_actor = os.getenvs('github_actor')
 # github_actor = 'pozuhtuhv'
 
 # svg 폴더 없으면 만들기
@@ -151,57 +151,33 @@ def fetch_commit_statistics(username):
 
     return commit_times
 
-# GitHub API를 통해 사용자 정보 가져오기
-if github_actor:
-    user_info = fetch_user_info(github_actor)
-    print(user_info)
-else:
-    print("github_actor 환경 변수를 설정하세요.")
+# svg 폴더 없으면 만들기
+SVG_DIR = 'svg'
+os.makedirs(SVG_DIR, exist_ok=True)
 
-# 해시 계산 함수
-def calculate_file_hash(file_path):
-    hasher = hashlib.md5()
-    with open(file_path, 'rb') as f:
-        hasher.update(f.read())
-    return hasher.hexdigest()
-
-# 유저 정보를 업데이트하는 함수
-def update_svg(user_info, origin_svg_file_path, filename):
+def update_svg_with_regex(user_info, origin_svg_file_path, filename):
     # SVG 파일 읽기
-    tree = ET.parse(origin_svg_file_path)
-    root = tree.getroot()
-    
-    # XML 네임스페이스 설정
-    ns = {'svg': 'http://www.w3.org/2000/svg', 'xhtml': 'http://www.w3.org/1999/xhtml'}
-    
-    # 기본 정보를 수정 (user info 출력 부분)
-    root.find(".//xhtml:div[@class='text-line line4']", ns).text = f"C:\\Users\\{user_info['login']}>"
-    
-    # 유저 정보 부분 수정
-    root.find(".//xhtml:div[@class='text-line line7']", ns).text = f"created : {user_info['created_at']}"
-    root.find(".//xhtml:div[@class='text-line line8']", ns).text = f"name : {user_info['name']}"
-    root.find(".//xhtml:div[@class='text-line line9']", ns).text = f"id : {user_info['login']} / uid : {user_info['uid']}"
-    root.find(".//xhtml:div[@class='text-line line10']", ns).text = f"follows: {user_info['followers']} following: {user_info['following']}"
-    root.find(".//xhtml:div[@class='text-line line12']", ns).text = f"C:\\Users\\{user_info['login']}>"
+    with open(origin_svg_file_path, 'r', encoding='utf-8') as file:
+        svg_data = file.read()
 
-    # 레포지토리 정보 수정
-    root.find(".//xhtml:div[@class='text-line line15']", ns).text = f"total : {user_info['total_repos']} - size : {user_info['size']} - stared : {user_info['stars']}"
-    root.find(".//xhtml:div[@class='text-line line16']", ns).text = f"activity times : {user_info['commit']}"
+    # 유저 정보 수정 (정규 표현식을 사용하여 텍스트 수정)
+    svg_data = re.sub(r'(<div class="text-line line4">)[^<]+(<span)', f"\\1C:\\\\Users\\\\{user_info['login']}>\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line7">)[^<]+(</div>)', f"\\1created : {user_info['created_at']}\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line8">)[^<]+(</div>)', f"\\1name : {user_info['name']}\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line9">)[^<]+(</div>)', f"\\1id : {user_info['login']} / uid : {user_info['uid']}\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line10">)[^<]+(</div>)', f"\\1follows: {user_info['followers']} following: {user_info['following']}\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line12">)[^<]+(<span)', f"\\1C:\\\\Users\\\\{user_info['login']}>\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line15">)[^<]+(</div>)', f"\\1total : {user_info['total_repos']} - size : {user_info['size']} - stared : {user_info['stars']}\\2", svg_data)
+    svg_data = re.sub(r'(<div class="text-line line16">)[^<]+(</div>)', f"\\1activity times : {user_info['commit']}\\2", svg_data)
     
-    # 언어 비율 정보 수정
     languages_str = ', '.join([f"{k}: {v}" for k, v in user_info['languages'].items()])
-    root.find(".//xhtml:div[@class='text-line line17']", ns).text = f"languages : {languages_str}"
+    svg_data = re.sub(r'(<div class="text-line line17">)[^<]+(</div>)', f"\\1languages : {languages_str}\\2", svg_data)
 
-    temp_filename = f"{filename}.temp"
-    tree.write(temp_filename, encoding="utf-8", xml_declaration=True)
-        
-    # 기존 파일이 있는 경우 해시를 비교하여 내용이 동일한지 확인
-    if os.path.exists(filename) and calculate_file_hash(filename) == calculate_file_hash(temp_filename):
-        print(f'{filename} 파일의 내용이 동일하여 덮어쓰지 않습니다.')
-        os.remove(temp_filename)  # 임시 파일 삭제
-    else:
-        os.rename(temp_filename, filename)  # 임시 파일을 원본 파일로 덮어쓰기
-        print(f'{filename} 저장 완료')
+    # 수정된 SVG를 파일에 저장
+    with open(filename, 'w', encoding='utf-8') as file:
+        file.write(svg_data)
+    
+    print(f'{filename} 저장 완료')
 
-# SVG 파일 업데이트
-update_svg(user_info, os.path.join(SVG_DIR, 'origin_svg.svg'), os.path.join(SVG_DIR, 'main_svg.svg'))
+# 사용 예시
+update_svg_with_regex(fetch_user_info(github_actor), os.path.join(SVG_DIR, 'origin_svg.svg'), os.path.join(SVG_DIR, 'main_svg.svg'))
