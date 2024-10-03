@@ -141,7 +141,7 @@
   <foreignObject x="10" y="50" width="563" height="400">
     <div xmlns="http://www.w3.org/1999/xhtml" class="text-container">
       <!-- 기본 정보 출력 -->
-      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4169]</div>
+      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4249]</div>
       <div class="text-line line2">(c) Microsoft Corporation. All rights reserved.</div>
       <div class="text-line line3">　</div>
       <div class="text-line line4">C:\Users\[login]&gt;<span class="text-line line5">user info</span></div>
