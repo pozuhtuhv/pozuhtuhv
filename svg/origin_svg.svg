@@ -97,12 +97,41 @@
   <rect x="245" y="31" width="9" height="10" fill="black" rx="1" ry="1"/>
   <rect x="249" y="30" width="9" height="10" fill="#333333" rx="1" ry="1"/>
 
-  <!-- 명령 프롬프트 아이콘 -->
-  <svg x="15" y="14" width="20px" height="20px" fill="none">
-    <path d="M4.5 10.7C4.5 9.57989 4.5 9.01984 4.71799 8.59202C4.90973 8.21569 5.21569 7.90973 5.59202 7.71799C6.01984 7.5 6.5799 7.5 7.7 7.5H16.3C17.4201 7.5 17.9802 7.5 18.408 7.71799C18.7843 7.90973 19.0903 8.21569 19.282 8.59202C19.5 9.01984 19.5 9.57989 19.5 10.7V14.3C19.5 15.4201 19.5 15.9802 19.282 16.408C19.0903 16.7843 18.7843 17.0903 18.408 17.282C17.9802 17.5 17.4201 17.5 16.3 17.5H7.7C6.57989 17.5 6.01984 17.5 5.59202 17.282C5.21569 17.0903 4.90973 16.7843 4.71799 16.408C4.5 15.9802 4.5 15.4201 4.5 14.3V10.7Z" stroke="white"/>
-    <path d="M7.5 10.5L9.5 12.5L7.5 14.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M11.5 14.5H16.5" stroke="white" stroke-linecap="round"/>
-  </svg>
+  <!-- 명령 프롬프트 아이콘 시작 -->
+  <!-- 가로줄 -->
+  <line x1="17.5" x2="33.5" y1="19" y2="19" width="1" height="1" stroke="#969696"/>
+  <line x1="17.5" x2="33.5" y1="31" y2="31" width="1" height="1" stroke="#969696"/>
+  <line x1="17.5" x2="33.5" y1="20" y2="20" width="1" height="1" stroke="#D3D9E0"/>
+  <line x1="17.5" x2="33.5" y1="21" y2="21" width="1" height="1" stroke="#D3D9E0"/>
+  <!-- 세로줄 -->
+  <line x1="18" x2="18" y1="19" y2="31" width="1" height="1" stroke="#969696"/>
+  <line x1="33" x2="33" y1="19" y2="31" width="1" height="1" stroke="#969696"/>
+
+  <!-- 점 3개 -->
+  <rect x="27.5" y="19.5" width="1" height="1" fill="#687991"/>
+  <rect x="29.5" y="19.5" width="1" height="1" fill="#687991"/>
+  <rect x="31.5" y="19.5" width="1" height="1" fill="#687991"/>
+
+  <rect x="22.5" y="24.5" width="1" height="1" fill="white"/>
+  <rect x="21.5" y="23.5" width="1" height="1" fill="white"/>
+  <rect x="20.5" y="23.5" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="24.5" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="25.5" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="26.5" width="1" height="1" fill="white"/>
+  <rect x="20.5" y="27.5" width="1" height="1" fill="white"/>
+  <rect x="21.5" y="27.5" width="1" height="1" fill="white"/>
+  <rect x="22.5" y="26.5" width="1" height="1" fill="white"/>
+  <rect x="24.5" y="24.5" width="1" height="1" fill="white"/>
+  <rect x="24.5" y="26.5" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="23.5" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="24.5" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="25.5" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="25.5" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="26.5" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="27.5" width="1" height="1" fill="white"/>
+  <rect x="29.5" y="27.5" width="1" height="1" fill="white"/>
+  <rect x="30.5" y="27.5" width="1" height="1" fill="white"/>
+  <!-- 명령 프롬프트 아이콘 끝 -->
 
   <!-- 제목 텍스트 -->
   <text x="42" y="32" font-family="Cascadia Mono" font-size="13" fill="white">Command Prompt</text>
