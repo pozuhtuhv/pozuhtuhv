@@ -159,14 +159,32 @@
   <foreignObject x="10" y="50" width="563" height="400">
     <div xmlns="http://www.w3.org/1999/xhtml" class="text-container">
       <!-- 기본 정보 출력 -->
-      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4169]</div>
+      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4249]</div>
       <div class="text-line line2">(c) Microsoft Corporation. All rights reserved.</div>
       <div class="text-line line3">　</div>
-      <div class="text-line line4">C:\Users\[username]&gt;<span class="text-line line5">echo example text</span></div>
-      <div class="text-line line6">example text</div>
-      <div class="text-line line7">　</div>
-      <div class="text-line line8">C:\Users\[username]&gt;<span class="blink_cursor">|</span></div>
-      
+      <div class="text-line line4">C:\Users\[login]&gt;<span class="text-line line5">user info</span></div>
+
+      <!-- 유저 정보 -->
+      <div class="text-line line6">　</div>
+      <div class="text-line line7">created : [created_at]</div>
+      <div class="text-line line8">name : [name]</div>
+      <div class="text-line line9">id : [login] / uid : [userid]</div>
+      <div class="text-line line10">follows: [followers] following: [following]</div>
+
+      <!-- 빈 줄 추가 -->
+      <div class="text-line line11">　</div>
+
+      <!-- 커맨드2: user repositories -->
+      <div class="text-line line12">C:\Users\[login]&gt;<span class="text-line line13">user repositories</span> </div>
+
+      <!-- 레포지토리 정보 -->
+      <div class="text-line line14">　</div>
+      <div class="text-line line15">total : [total_repos] - size : [size] - stared : [stars]</div>
+      <div class="text-line line16">activity times : [commit]</div>
+      <div class="text-line line17">languages : [top_languages]</div>
+      <div class="text-line line18">　</div>
+      <div class="text-line line19">C:\Users\[login]&gt;<span class="blink_cursor">|</span></div>
+
     </div>
   </foreignObject>
 </svg>
