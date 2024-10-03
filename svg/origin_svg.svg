@@ -1,5 +1,5 @@
 <!-- div setting svg -->
-<svg width="583" height="500" xmlns="http://www.w3.org/2000/svg">
+<svg width="583" height="500" xmlns="http://www.w3.org/2000/svg" viewBox= "0 0 583 500">
   <style>
     .text-container {
       display: flex;
@@ -29,30 +29,18 @@
       animation-delay: 1.2s; 
       }
 
-    .line5 {
-      animation-delay: 1.5s;
-    }
+    .line5 { 
+      animation-delay: 1.6s; 
+      }
 
-    .line7, .line8, .line9, .line10 {
-      animation-delay: 1.8s;
-    }
+    .line6 { 
+      animation-delay: 2s; 
+      }
 
-    .line12 {
-      animation-delay: 2.2s;
-    }
-
-    .line13 {
-      animation-delay: 2.5s;
-    }
-
-    .line15, .line16, .line17 {
-      animation-delay: 3s;
-    }
-
-    .line19 {
-      animation-delay: 3.4s;
-    }
-
+    .line8 { 
+      animation-delay: 2.2s; 
+      }
+    
     .blink_cursor {
       font-size: 15px;
       font-family: monospace;
@@ -98,47 +86,48 @@
   <rect x="249" y="30" width="9" height="10" fill="#333333" rx="1" ry="1"/>
 
   <!-- 명령 프롬프트 아이콘 시작 -->
-  <!-- 가로줄 -->
-  <line x1="17.5" x2="33.5" y1="19" y2="19" width="1" height="1" stroke="#969696"/>
-  <line x1="17.5" x2="33.5" y1="31" y2="31" width="1" height="1" stroke="#969696"/>
-  <line x1="17.5" x2="33.5" y1="20" y2="20" width="1" height="1" stroke="#D3D9E0"/>
-  <line x1="17.5" x2="33.5" y1="21" y2="21" width="1" height="1" stroke="#D3D9E0"/>
-  <!-- 세로줄 -->
-  <line x1="18" x2="18" y1="19" y2="31" width="1" height="1" stroke="#969696"/>
-  <line x1="33" x2="33" y1="19" y2="31" width="1" height="1" stroke="#969696"/>
+<!-- 수평선 -->
+<line x1="17.5" x2="33.5" y1="21.5" y2="21.5" stroke="#969696"/>
+<line x1="17.5" x2="33.5" y1="33.5" y2="33.5" stroke="#969696"/>
+<line x1="17.5" x2="33.5" y1="22.5" y2="22.5" stroke="#D3D9E0"/>
+<line x1="17.5" x2="33.5" y1="23.5" y2="23.5" stroke="#D3D9E0"/>
+
+<!-- 세로줄 (수직선) -->
+<line x1="18" x2="18" y1="21.5" y2="33.5" stroke="#969696"/>
+<line x1="33" x2="33" y1="21.5" y2="33.5" stroke="#969696"/>
 
   <!-- 점 3개 -->
-  <rect x="27.5" y="19.5" width="1" height="1" fill="#687991"/>
-  <rect x="29.5" y="19.5" width="1" height="1" fill="#687991"/>
-  <rect x="31.5" y="19.5" width="1" height="1" fill="#687991"/>
+  <rect x="27.5" y="22" width="1" height="1" fill="#687991"/>
+  <rect x="29.5" y="22" width="1" height="1" fill="#687991"/>
+  <rect x="31.5" y="22" width="1" height="1" fill="#687991"/>
 
-  <rect x="22.5" y="24.5" width="1" height="1" fill="white"/>
-  <rect x="21.5" y="23.5" width="1" height="1" fill="white"/>
-  <rect x="20.5" y="23.5" width="1" height="1" fill="white"/>
-  <rect x="19.5" y="24.5" width="1" height="1" fill="white"/>
-  <rect x="19.5" y="25.5" width="1" height="1" fill="white"/>
-  <rect x="19.5" y="26.5" width="1" height="1" fill="white"/>
-  <rect x="20.5" y="27.5" width="1" height="1" fill="white"/>
-  <rect x="21.5" y="27.5" width="1" height="1" fill="white"/>
-  <rect x="22.5" y="26.5" width="1" height="1" fill="white"/>
-  <rect x="24.5" y="24.5" width="1" height="1" fill="white"/>
-  <rect x="24.5" y="26.5" width="1" height="1" fill="white"/>
-  <rect x="26.5" y="23.5" width="1" height="1" fill="white"/>
-  <rect x="26.5" y="24.5" width="1" height="1" fill="white"/>
-  <rect x="26.5" y="25.5" width="1" height="1" fill="white"/>
-  <rect x="27.5" y="25.5" width="1" height="1" fill="white"/>
-  <rect x="27.5" y="26.5" width="1" height="1" fill="white"/>
-  <rect x="27.5" y="27.5" width="1" height="1" fill="white"/>
-  <rect x="29.5" y="27.5" width="1" height="1" fill="white"/>
-  <rect x="30.5" y="27.5" width="1" height="1" fill="white"/>
+  <rect x="22.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="21.5" y="26" width="1" height="1" fill="white"/>
+  <rect x="20.5" y="26" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="28" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="20.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="21.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="22.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="24.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="24.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="26" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="28" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="28" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="29.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="30.5" y="30" width="1" height="1" fill="white"/>
   <!-- 명령 프롬프트 아이콘 끝 -->
 
   <!-- 제목 텍스트 -->
   <text x="42" y="32" font-family="Cascadia Mono" font-size="13" fill="white">Command Prompt</text>
 
   <!-- 탭 닫기 -->
-  <line x1="223" x2="231" y1="19" y2="27" stroke="white"/>
-  <line x1="223" x2="231" y1="27" y2="19" stroke="white"/>
+  <line x1="223" x2="231" y1="20" y2="28" stroke="white"/>
+  <line x1="223" x2="231" y1="28" y2="20" stroke="white"/>
 
   <!-- 탭 추가 -->
   <line x1="270" x2="270" y1="19" y2="29" stroke="white"/>
@@ -170,32 +159,14 @@
   <foreignObject x="10" y="50" width="563" height="400">
     <div xmlns="http://www.w3.org/1999/xhtml" class="text-container">
       <!-- 기본 정보 출력 -->
-      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4249]</div>
+      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4169]</div>
       <div class="text-line line2">(c) Microsoft Corporation. All rights reserved.</div>
       <div class="text-line line3">　</div>
-      <div class="text-line line4">C:\Users\[login]&gt;<span class="text-line line5">user info</span></div>
+      <div class="text-line line4">C:\Users\[username]&gt;<span class="text-line line5">echo example text</span></div>
+      <div class="text-line line6">example text</div>
+      <div class="text-line line7">　</div>
+      <div class="text-line line8">C:\Users\[username]&gt;<span class="blink_cursor">|</span></div>
       
-      <!-- 유저 정보 -->
-      <div class="text-line line6">　</div>
-      <div class="text-line line7">created : [created_at]</div>
-      <div class="text-line line8">name : [name]</div>
-      <div class="text-line line9">id : [login] / uid : [userid]</div>
-      <div class="text-line line10">follows: [followers] following: [following]</div>
-      
-      <!-- 빈 줄 추가 -->
-      <div class="text-line line11">　</div>
-      
-      <!-- 커맨드2: user repositories -->
-      <div class="text-line line12">C:\Users\[login]&gt;<span class="text-line line13">user repositories</span> </div>
-      
-      <!-- 레포지토리 정보 -->
-      <div class="text-line line14">　</div>
-      <div class="text-line line15">total : [total_repos] - size : [size] - stared : [stars]</div>
-      <div class="text-line line16">activity times : [commit]</div>
-      <div class="text-line line17">languages : [top_languages]</div>
-      <div class="text-line line18">　</div>
-      <div class="text-line line19">C:\Users\[login]&gt;<span class="blink_cursor">|</span></div>
-
     </div>
   </foreignObject>
 </svg>
