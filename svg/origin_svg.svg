@@ -1,5 +1,5 @@
 <!-- div setting svg -->
-<svg width="583" height="500" xmlns="http://www.w3.org/2000/svg" viewBox= "0 0 583 500">
+<svg width="583" height="500" xmlns="http://www.w3.org/2000/svg">
   <style>
     .text-container {
       display: flex;
@@ -8,46 +8,46 @@
       font-family: "Cascadia Mono", monospace;
       font-size: 12px;
     }
-
     .text-line {
       overflow: hidden;
       white-space: nowrap;
       clip-path: inset(0 100% 0 0);
       animation: reveal-text 0.2s steps(20) forwards;
     }
-
     /* 애니메이션 딜레이 */
     .line1 { 
       animation-delay: 0.5s; 
       }
-
     .line2 {
       animation-delay: 0.8s; 
       }
-
     .line4 { 
       animation-delay: 1.2s; 
       }
-
-    .line5 { 
-      animation-delay: 1.6s; 
-      }
-
-    .line6 { 
-      animation-delay: 2s; 
-      }
-
-    .line8 { 
-      animation-delay: 2.2s; 
-      }
-    
+    .line5 {
+      animation-delay: 1.5s;
+    }
+    .line7, .line8, .line9, .line10 {
+      animation-delay: 1.8s;
+    }
+    .line12 {
+      animation-delay: 2.2s;
+    }
+    .line13 {
+      animation-delay: 2.5s;
+    }
+    .line15, .line16, .line17 {
+      animation-delay: 3s;
+    }
+    .line19 {
+      animation-delay: 3.4s;
+    }
     .blink_cursor {
       font-size: 15px;
       font-family: monospace;
       animation: blink 1s steps(1) infinite;
       animation-delay: 3.6s;
     }
-
     @keyframes blink {
       0% {
         opacity: 1;
@@ -59,7 +59,6 @@
         opacity: 1;
       }
     }
-
     @keyframes reveal-text {
       to {
         clip-path: inset(0 0 0 0);
