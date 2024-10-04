@@ -8,58 +8,46 @@
       font-family: "Cascadia Mono", monospace;
       font-size: 12px;
     }
-
     .text-line {
       overflow: hidden;
       white-space: nowrap;
       clip-path: inset(0 100% 0 0);
       animation: reveal-text 0.2s steps(20) forwards;
     }
-
     /* 애니메이션 딜레이 */
     .line1 { 
       animation-delay: 0.5s; 
       }
-
     .line2 {
       animation-delay: 0.8s; 
       }
-
     .line4 { 
       animation-delay: 1.2s; 
       }
-
     .line5 {
       animation-delay: 1.5s;
     }
-
     .line7, .line8, .line9, .line10 {
       animation-delay: 1.8s;
     }
-
     .line12 {
       animation-delay: 2.2s;
     }
-
     .line13 {
       animation-delay: 2.5s;
     }
-
     .line15, .line16, .line17 {
       animation-delay: 3s;
     }
-
     .line19 {
       animation-delay: 3.4s;
     }
-
     .blink_cursor {
       font-size: 15px;
       font-family: monospace;
       animation: blink 1s steps(1) infinite;
       animation-delay: 3.6s;
     }
-
     @keyframes blink {
       0% {
         opacity: 1;
@@ -71,7 +59,6 @@
         opacity: 1;
       }
     }
-
     @keyframes reveal-text {
       to {
         clip-path: inset(0 0 0 0);
@@ -97,19 +84,49 @@
   <rect x="245" y="31" width="9" height="10" fill="black" rx="1" ry="1"/>
   <rect x="249" y="30" width="9" height="10" fill="#333333" rx="1" ry="1"/>
 
-  <!-- 명령 프롬프트 아이콘 -->
-  <svg x="15" y="14" width="20px" height="20px" fill="none">
-    <path d="M4.5 10.7C4.5 9.57989 4.5 9.01984 4.71799 8.59202C4.90973 8.21569 5.21569 7.90973 5.59202 7.71799C6.01984 7.5 6.5799 7.5 7.7 7.5H16.3C17.4201 7.5 17.9802 7.5 18.408 7.71799C18.7843 7.90973 19.0903 8.21569 19.282 8.59202C19.5 9.01984 19.5 9.57989 19.5 10.7V14.3C19.5 15.4201 19.5 15.9802 19.282 16.408C19.0903 16.7843 18.7843 17.0903 18.408 17.282C17.9802 17.5 17.4201 17.5 16.3 17.5H7.7C6.57989 17.5 6.01984 17.5 5.59202 17.282C5.21569 17.0903 4.90973 16.7843 4.71799 16.408C4.5 15.9802 4.5 15.4201 4.5 14.3V10.7Z" stroke="white"/>
-    <path d="M7.5 10.5L9.5 12.5L7.5 14.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M11.5 14.5H16.5" stroke="white" stroke-linecap="round"/>
-  </svg>
+  <!-- 명령 프롬프트 아이콘 시작 -->
+<!-- 수평선 -->
+<line x1="17.5" x2="33.5" y1="21.5" y2="21.5" stroke="#969696"/>
+<line x1="17.5" x2="33.5" y1="33.5" y2="33.5" stroke="#969696"/>
+<line x1="17.5" x2="33.5" y1="22.5" y2="22.5" stroke="#D3D9E0"/>
+<line x1="17.5" x2="33.5" y1="23.5" y2="23.5" stroke="#D3D9E0"/>
+
+<!-- 세로줄 (수직선) -->
+<line x1="18" x2="18" y1="21.5" y2="33.5" stroke="#969696"/>
+<line x1="33" x2="33" y1="21.5" y2="33.5" stroke="#969696"/>
+
+  <!-- 점 3개 -->
+  <rect x="27.5" y="22" width="1" height="1" fill="#687991"/>
+  <rect x="29.5" y="22" width="1" height="1" fill="#687991"/>
+  <rect x="31.5" y="22" width="1" height="1" fill="#687991"/>
+
+  <rect x="22.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="21.5" y="26" width="1" height="1" fill="white"/>
+  <rect x="20.5" y="26" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="28" width="1" height="1" fill="white"/>
+  <rect x="19.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="20.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="21.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="22.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="24.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="24.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="26" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="27" width="1" height="1" fill="white"/>
+  <rect x="26.5" y="28" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="28" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="29" width="1" height="1" fill="white"/>
+  <rect x="27.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="29.5" y="30" width="1" height="1" fill="white"/>
+  <rect x="30.5" y="30" width="1" height="1" fill="white"/>
+  <!-- 명령 프롬프트 아이콘 끝 -->
 
   <!-- 제목 텍스트 -->
   <text x="42" y="32" font-family="Cascadia Mono" font-size="13" fill="white">Command Prompt</text>
 
   <!-- 탭 닫기 -->
-  <line x1="223" x2="231" y1="19" y2="27" stroke="white"/>
-  <line x1="223" x2="231" y1="27" y2="19" stroke="white"/>
+  <line x1="223" x2="231" y1="20" y2="28" stroke="white"/>
+  <line x1="223" x2="231" y1="28" y2="20" stroke="white"/>
 
   <!-- 탭 추가 -->
   <line x1="270" x2="270" y1="19" y2="29" stroke="white"/>
@@ -141,28 +158,28 @@
   <foreignObject x="10" y="50" width="563" height="400">
     <div xmlns="http://www.w3.org/1999/xhtml" class="text-container">
       <!-- 기본 정보 출력 -->
-      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4169]</div>
+      <div class="text-line line1">Microsoft Windows [Version 10.0.22631.4249]</div>
       <div class="text-line line2">(c) Microsoft Corporation. All rights reserved.</div>
       <div class="text-line line3">　</div>
       <div class="text-line line4">C:\Users\pozuhtuhv><span class="text-line line5">user info</span></div>
-      
+
       <!-- 유저 정보 -->
       <div class="text-line line6">　</div>
-      <div class="text-line line7">created : 1year 5month 19day</div>
+      <div class="text-line line7">created : 1year 5month 20day</div>
       <div class="text-line line8">name : Hyeonseok-Cho</div>
       <div class="text-line line9">id : pozuhtuhv / uid : 130971091</div>
       <div class="text-line line10">follows: 2 following: 13</div>
-      
+
       <!-- 빈 줄 추가 -->
       <div class="text-line line11">　</div>
-      
+
       <!-- 커맨드2: user repositories -->
       <div class="text-line line12">C:\Users\pozuhtuhv><span class="text-line line13">user repositories</span> </div>
-      
+
       <!-- 레포지토리 정보 -->
       <div class="text-line line14">　</div>
-      <div class="text-line line15">total : 20 - size : 2068.86 MB - stared : 0</div>
-      <div class="text-line line16">activity times : Morning: 469, Night: 850, Daytime: 228, Evening: 96</div>
+      <div class="text-line line15">total : 20 - size : 2068.87 MB - stared : 0</div>
+      <div class="text-line line16">activity times : Morning: 471, Night: 851, Daytime: 231, Evening: 96</div>
       <div class="text-line line17">languages : Python: 13, None: 5, HTML: 1, JavaScript: 1</div>
       <div class="text-line line18">　</div>
       <div class="text-line line19">C:\Users\pozuhtuhv><span class="blink_cursor">|</span></div>
