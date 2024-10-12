@@ -32,21 +32,12 @@ jobs:
       env:
         github_actor: ${{ github.actor }}
       run: python user_info.py
-
-# Git Push
-    # - name: Commit and push changes
-    #   run: |
-    #     git config --local user.email "pozuhtuhv@gmail.com"
-    #     git config --local user.name "Hyeonseok-Cho"
-    #     git add -A
-    #     git commit -m "(update) auto_svg_data"
-    #     git push
     
 # Git Push
     - name: Commit and push changes
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "${GITHUB_ACTOR_ID}+github-actions[bot]@users.noreply.github.com"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
         git add -A
         git commit -m "(update) auto_data_load"
         git push
