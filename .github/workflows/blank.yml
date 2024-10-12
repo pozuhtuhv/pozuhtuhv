@@ -1,15 +1,14 @@
 name: Fetch GitHub User Info
 
-on:
-   schedule:
-     - cron: '0 0 * * *' # 한국시간 오전 9시에 실행
-
+# on:
+#    schedule:
+#      - cron: '0 0 * * *' # 한국시간 오전 9시에 실행
 
 # 이후 데이터 업데이트 필요시 cron 수정
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   fetch-info:
@@ -35,10 +34,19 @@ jobs:
       run: python user_info.py
 
 # Git Push
+    # - name: Commit and push changes
+    #   run: |
+    #     git config --local user.email "pozuhtuhv@gmail.com"
+    #     git config --local user.name "Hyeonseok-Cho"
+    #     git add -A
+    #     git commit -m "(update) auto_svg_data"
+    #     git push
+    
+# Git Push
     - name: Commit and push changes
       run: |
-        git config --local user.email "pozuhtuhv@gmail.com"
-        git config --local user.name "Hyeonseok-Cho"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "${GITHUB_ACTOR_ID}+github-actions[bot]@users.noreply.github.com"
         git add -A
-        git commit -m "(update) auto_svg_data"
+        git commit -m "(update) auto_data_load"
         git push
