@@ -2,8 +2,6 @@
 <h3>minimal: less is more.</h3>
 </div>
 <div align="left">
-<details>
-<summary>stack...</summary>
 <h4>Stack</h4>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
 <h4>Database & Server</h4>
@@ -27,7 +25,6 @@
 <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"><br>
 <br>
 </div>
-</details>
 
 <details>
   <summary>info...</summary>
