@@ -19,6 +19,8 @@
 <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white">
 <img src="https://img.shields.io/badge/Playwright-43B02A?style=flat-square&logo=Playwright&logoColor=white"><br>
 <h4>Data & Framework (Studying)</h4>
+<img src="https://img.shields.io/badge/TensorFlow-FF3F06?style=flat-square&logo=tensorflow&logoColor=white">
+<img src="https://img.shields.io/badge/Pytorch-ee4c2c?style=flat-square&logo=pytorch&logoColor=white">
 <img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
 <img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white">
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
