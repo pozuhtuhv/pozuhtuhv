@@ -2,30 +2,30 @@
 <h3>minimal: less is more.</h3>
 </div>
 <div align="left">
-<h4>Stack</h4>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
-<h4>Database & Server</h4>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white">
-<img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white">
-<h4>Visualization</h4>
-<img src="https://img.shields.io/badge/Looker-4285F4?style=flat-square&logo=Looker&logoColor=white">
-<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white">
-<img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white"><br>
-<h4>Application</h4>
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white">
-<img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white">
-<img src="https://img.shields.io/badge/Actions-181717?style=flat-square&logo=GithubActions&logoColor=white">
-<img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white">
-<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white">
-<img src="https://img.shields.io/badge/Playwright-43B02A?style=flat-square&logo=Playwright&logoColor=white"><br>
-<h4>Data & Framework (Studying)</h4>
-<img src="https://img.shields.io/badge/TensorFlow-FF3F06?style=flat-square&logo=tensorflow&logoColor=white">
-<img src="https://img.shields.io/badge/Pytorch-ee4c2c?style=flat-square&logo=pytorch&logoColor=white">
-<img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
-<img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white">
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
-<img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"><br>
-<br>
+  <h3>Tech Stack</h3>
+  <h4>Main</h4>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
+  <h4>DB</h4>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white">
+  <img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white">
+  <h4>Visualization</h4>
+  <img src="https://img.shields.io/badge/Looker-4285F4?style=flat-square&logo=Looker&logoColor=white">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white">
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white">
+  <h4>Application</h4>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white">
+  <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white">
+  <img src="https://img.shields.io/badge/Actions-181717?style=flat-square&logo=GithubActions&logoColor=white">
+  <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white">
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white">
+  <h4>Data & Framework (Edu ~ing)</h4>
+  <img src="https://img.shields.io/badge/TensorFlow-FF3F06?style=flat-square&logo=tensorflow&logoColor=white">
+  <img src="https://img.shields.io/badge/Pytorch-ee4c2c?style=flat-square&logo=pytorch&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/DuckDB-181717?style=flat-square&logo=DuckDB&logoColor=white">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white">
+  <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white">
 </div>
 
 <details>
