@@ -48,13 +48,11 @@
   - **api** : api service 
   - **bot**_~ : automation, git_action
   - **crawl**_~ : Selenium, Playwright, Requests
-  - **dacon**_~ : Dacon Data analytics
   - **fork**_ : fork repositories
   - **framework**_~ : Django, FastAPI, Streamlit
   - **git**_~ : git_external
   - **gui**_~ : tkinter, PySide6
   - **etc**: etc
-  - **service** : service
 
 <!--- **Commit Comment Rule**
   - **add**: 추가 
