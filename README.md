@@ -1,11 +1,13 @@
 <div align="center">
 <h2>minimal: less is more.</h2>
-<h3>자료들 다 숨겨놨습니다.</h3>
+
+<!--<h3>자료들 다 숨겨놨습니다.</h3>
 <h3>요즘 뭔가 글을 쓰는데 재미가 없어진것 같아서요.</h3>
 <h3>조금 쉬다가 다시 돌아오겠습니다.</h3>
-</div>
-<!--
-<div align="left">
+</div> -->
+
+
+<!-- <div align="left">
   <h3>Tech Stack</h3>
   <h4>Main</h4>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
@@ -29,9 +31,7 @@
   <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white">
   <img src="https://img.shields.io/badge/Pandas-43B02A?style=flat-square&logo=Pandas&logoColor=white">
   <img src="https://img.shields.io/badge/Postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white">
-</div>
-
-<!--
+</div> -->
 
 <details>
   <summary>info...</summary>
@@ -41,7 +41,6 @@
   </div>
 </details>
 
--->
 <!-- info : https://pozuhtuhv.github.io/about<br> -->
 <!--- ### Rule
 - **Repositories Name Rule**
